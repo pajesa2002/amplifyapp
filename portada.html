@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+html {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+.top {
+  background-color: #111111;
+  color: #ffffff;
+  float: left;
+  padding: 10px;
+  width: 66.66%;
+}
+
+.logo {
+  background-color: #ffffff;
+  color: #000000;
+  float: left;
+  width: 16.66%;  
+}
+
+.icono {
+  background-color: #ffffff;
+  color: #000000;
+  float: left;
+  width: 8.33%; 
+}
+
+.header {
+  background-color: #9933cc;
+  color: #ffffff;
+  width: 100%;
+  float: left;
+  padding: 15px;
+}
+
+.barraM {
+  background-color: #111111;
+  float: left;
+  color: #ffffff;
+  text-align: right;
+  padding: 10px;
+  width: 91.66%;
+}
+
+.menu1 ul {
+  padding: 0;
+  list-style: none;
+  background: #111111;
+  position: absolute;
+  
+}
+
+.menu1 li {
+        display: block;
+        background-color: #3cb371;
+        padding: 5px;
+        color: #000000;
+        text-decoration: none;
+ width: 10%;
+ height: 15%;      
+}
+
+ul.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: none;
+
+}
+
+.menu li {
+  padding: 5px;
+  background-color: #3cb371;
+  color: #ffffff;
+}
+
+.menu li:hover {
+  background-color: #0099cc;
+}
+
+.menu1:hover ul.menu {
+  color: #ffa500;
+  display: block;
+}
+
+.aside {
+  background-color: #33b5e5;
+  padding: 15px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.footer {
+  background-color: #0099cc;
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+  padding: 15px;
+}
+
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+</style>
+</head>
+
+<body>
+<div class="logo">
+ <img src="logo_1.png" alt="Hu-Pa" style="max-width:75%;height:auto;">
+</div>
+
+<div class="top">
+  <h1>Publicidad 1</h1>
+</div>
+
+<div class="icono">
+  <img src="contacto.png" alt="Hu-Pa" style="max-width:75%;height:auto;">Contacto
+</div>
+
+<div class="icono">
+  <img src="login.png" alt="Hu-Pa" style="max-width:75%;height:auto;">Login
+</div>
+
+<div class="header">
+  <h1>Mercado de Plantas</h1>
+</div>
+
+
+
+<div>
+
+  <ul class="menu1">
+    <li>Menu</li>
+  <div>
+    <ul class="menu" id="menuP">
+    <li>Articulos</li>
+    <li>Publicaciones</li>
+    <li>Foro</li>
+    <li>Consulta a Experto</li>
+    <li>Salir</li>
+    </ul>
+  </div>
+ </ul>
+
+</div>
+
+<div class="col-3 right">
+    <div class="aside">
+      <h2>Publicidad 2</h2>
+      <h2>Publicidad 4</h2>
+      <h2>Publicidad 6</h2>
+    </div>
+  </div>
+
+  <div class="col-6">
+    <h1>Que es el Mercado de Plantas?</h1>
+    <p>El mercado de plantas es un espacio en el que la comunidad de productores de los huertos urbanos intercambian plantas y semillas bajo la modalidad de trueque, por lo que NO se permiten intercambios por dinero. <br>
+Ademas en el mercado de plantas los productores encontraran un punto de reunion virtual en el que podrán intercambiar experiencias y conocimientos entre si.<br>
+En el marcado de plantas tambien se publicaran articulos de interes de la comunidad sustentable, tips semanales y eventos.<br>
+<strong>Acceso a expertos</strong><br>
+La comunidad tendra acceso a expertos en huertos urbanos para hacer consultas sobre alguna preocupacion en particular
+</p>
+  </div>
+
+  <div class="col-3 right">
+    <div class="aside">
+      <h2>Publicidad 3</h2>
+      <h2>Publicidad 5</h2>
+      <h2>Publicidad 7</h2>
+    </div>
+  </div>
+</div>
+
+<!-- <div class="footer">
+  <p>Resize the browser window to see how the content respond to the resizing.</p>
+</div> -->
+
+
+</body>
+</html>
